@@ -57,9 +57,9 @@ broadcast(Name, PoolSize, FromPid, Topic, Msg) ->
 
 %% @hidden
 init(Name) ->
-  PG2Namespace = pg2_namespace(Name),
-  ok = pg:start_link(PG2Namespace),
-  ok = pg:join(PG2Namespace, self()),
+  %%PG2Namespace = pg2_namespace(Name),
+  %%ok = pg:start_link(PG2Namespace),
+  %%ok = pg:join(PG2Namespace, self()),
   {ok, Name}.
 
 %% @hidden
@@ -92,4 +92,4 @@ code_change(_OldVsn, State, _Extra) ->
 %%%===================================================================
 
 %% @private
-pg2_namespace(ServerName) ->  list_to_atom("ebus" ++ atom_to_list(ServerName)).
+pg2_namespace(ServerName) ->  ServerName.
