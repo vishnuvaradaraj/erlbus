@@ -9,7 +9,7 @@
   1},
  {<<"erlbus">>,
   {git,"https://github.com/vishnuvaradaraj/erlbus",
-       {ref,"cf999970ee094581caeacb2fded9b5e7876306bb"}},
+       {ref,"f3b9991aaae5ff509892f509116110b488a5960b"}},
   0},
  {<<"jiffy">>,
   {git,"https://github.com/davisp/jiffy.git",
