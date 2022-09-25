@@ -92,4 +92,4 @@ code_change(_OldVsn, State, _Extra) ->
 %%%===================================================================
 
 %% @private
-pg2_namespace(ServerName) -> {ebus, ServerName}.
+pg2_namespace(ServerName) -> list_to_atom("ebus" ++ ServerName).
