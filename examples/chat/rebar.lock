@@ -3,7 +3,7 @@
  {<<"cowlib">>,{pkg,<<"cowlib">>,<<"2.11.0">>},1},
  {<<"erlbus">>,
   {git,"https://github.com/vishnuvaradaraj/erlbus",
-       {ref,"05bd05c63093dce16dff4a579202ccf2d4bc4b09"}},
+       {ref,"3597f74e1332e39bdcc6be2a8366ac699c211cfc"}},
   0},
  {<<"jiffy">>,{pkg,<<"jiffy">>,<<"1.1.1">>},0},
  {<<"ranch">>,{pkg,<<"ranch">>,<<"1.8.0">>},1},
