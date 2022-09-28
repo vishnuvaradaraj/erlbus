@@ -16,9 +16,10 @@ start(_Type, _Args) ->
   {"/assets/[...]", cowboy_static, {priv_dir, chat, "assets"}}
   ]}
   ]),
-  {ok, _} = cowboy:start_http(http, 100, [{port, 8080}],
-  [{env, [{dispatch, Dispatch}]}]),
-  chat_sup:start_link().
+  {ok, _} = cowboy:start_clear(http, [{port, 8080}], #{
+		env => #{dispatch => Dispatch}
+	}),
+	chat_sup:start_link().
 
 stop(_State) ->
-  ok.
+  ok = cowboy:stop_listener(http).
